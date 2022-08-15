@@ -17,15 +17,16 @@ public class Main {
         int sum = 0;
 
         sum = 0;
+        int min = arr[0];
+        int max = arr[0];
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
-            System.out.println(" Сумма трат за месяц составила " + sum +  "- рублей.");
+            System.out.println(" Сумма трат за месяц составила " + sum + "- рублей.");
 
 
             //Второе задание
-            int min = arr[0];
-            int max = arr[0];
-            for (int j = 0; j < arr.length; j++) {
+
+            //for (int j = 0; j < arr.length; j++) {
                 if (arr[i] < min) {
                     min = arr[i];
                 }
@@ -45,7 +46,7 @@ public class Main {
             for (int j = reverseFullName.length-1; j > -1; j--) {
                 System.out.print(reverseFullName[j]);
             }
-            System.out.println("\n===============================");
+            //System.out.println("\n===============================");
         }
     }
-}
+
